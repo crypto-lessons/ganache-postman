@@ -1,0 +1,24 @@
+{
+  "name": "ganache-postman",
+  "version": "1.0.0",
+  "main": "ganache.js",
+  "repository": "https://github.com/crypto-lessons/ganache-postman.git",
+  "license": "MIT",
+  "scripts": {
+    "ganache": "node ganache.js",
+    "h2i": "node ./scripts/hex2int.js ${0}",
+    "h2b": "node ./scripts/hex2bigint.js ${0}",
+    "h2a": "node ./scripts/hex2ascii.js ${0}",
+    "i2h": "node ./scripts/int2hex.js ${0}",
+    "b2h": "node ./scripts/bigint2hex.js ${0}",
+    "a2h": "node ./scripts/ascii2hex.js ${0}",
+    "e2w": "node ./scripts/ether2wei.js ${0}",
+    "w2e": "node ./scripts/wei2ether.js ${0}"
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^10.0.0",
+    "ganache-cli": "^6.12.2",
+    "web3": "^1.3.6"
+  }
+}
