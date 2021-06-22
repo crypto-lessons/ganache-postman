@@ -7,14 +7,14 @@
   "scripts": {
     "ganache": "node ganache.js",
     "wallet": "node ./scripts/mnemonic.js",
-    "h2i": "node ./scripts/hex2int.js ${0}",
-    "h2b": "node ./scripts/hex2bigint.js ${0}",
-    "h2a": "node ./scripts/hex2ascii.js ${0}",
-    "i2h": "node ./scripts/int2hex.js ${0}",
-    "b2h": "node ./scripts/bigint2hex.js ${0}",
-    "a2h": "node ./scripts/ascii2hex.js ${0}",
-    "e2w": "node ./scripts/ether2wei.js ${0}",
-    "w2e": "node ./scripts/wei2ether.js ${0}"
+    "h2i": "node ./scripts/hex2int.js",
+    "h2b": "node ./scripts/hex2bigint.js",
+    "h2a": "node ./scripts/hex2ascii.js",
+    "i2h": "node ./scripts/int2hex.js",
+    "b2h": "node ./scripts/bigint2hex.js",
+    "a2h": "node ./scripts/ascii2hex.js",
+    "e2w": "node ./scripts/ether2wei.js",
+    "w2e": "node ./scripts/wei2ether.js"
   },
   "devDependencies": {
     "bip39": "^3.0.4",
