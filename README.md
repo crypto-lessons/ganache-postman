@@ -20,6 +20,11 @@ Create or copy a `.env` file in the root of your project
     $ cp .env.example .env
 
 
+Generate a random mnemonic to initiate ganache-cli with same accounts
+
+    $ yarn wallet
+
+
 Change variables from `.env` file
 
 ```sh
@@ -29,7 +34,7 @@ GAS_PRICE=
 GAS_LIMIT=
 BLOCK_TIME=
 ETHER_BALANCE=
-MNEMONIC=
+MNEMONIC="PASTE YOUR GENERATED MNEMONIC HERE"
 ```
 
 

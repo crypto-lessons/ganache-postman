@@ -9,7 +9,11 @@ const GAS_LIMIT = process.env.GAS_LIMIT;
 const BLOCK_TIME = process.env.BLOCK_TIME;
 const PORT = process.env.PORT;
 
-var strCommand = `ganache-cli -b=${BLOCK_TIME} -m="${MNEMONIC}" -e=${ETHER_BALANCE} -i ${NETWORK_ID} -g ${GAS_PRICE} -l ${GAS_LIMIT} -p ${PORT} -n -u 0 -u 1 -u 2 -u 3 -u 4 -u 5 -u 6 -u 7 -u 8 -u 9`;
+var strCommand = `ganache-cli -b=${BLOCK_TIME} -e=${ETHER_BALANCE} -i ${NETWORK_ID} -g ${GAS_PRICE} -l ${GAS_LIMIT} -p ${PORT} -n -u 0 -u 1 -u 2 -u 3 -u 4 -u 5 -u 6 -u 7 -u 8 -u 9`;
+
+if(MNEMONIC!='') {
+  strCommand = strCommand + ' -m="${MNEMONIC}"';
+}
 
 var child = exec(strCommand,
   function (error) {

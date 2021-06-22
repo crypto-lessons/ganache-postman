@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "ganache": "node ganache.js",
+    "wallet": "node ./scripts/mnemonic.js",
     "h2i": "node ./scripts/hex2int.js ${0}",
     "h2b": "node ./scripts/hex2bigint.js ${0}",
     "h2a": "node ./scripts/hex2ascii.js ${0}",
@@ -16,6 +17,7 @@
     "w2e": "node ./scripts/wei2ether.js ${0}"
   },
   "devDependencies": {
+    "bip39": "^3.0.4",
     "child_process": "^1.0.2",
     "dotenv": "^10.0.0",
     "ganache-cli": "^6.12.2",
